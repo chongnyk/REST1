@@ -1,0 +1,12 @@
+C:\Work\Code\REST1\SanrioMarket\SanrioMarket.Contracts\bin\Debug\net7.0\SanrioMarket.Contracts.deps.json
+C:\Work\Code\REST1\SanrioMarket\SanrioMarket.Contracts\bin\Debug\net7.0\SanrioMarket.Contracts.dll
+C:\Work\Code\REST1\SanrioMarket\SanrioMarket.Contracts\bin\Debug\net7.0\SanrioMarket.Contracts.pdb
+C:\Work\Code\REST1\SanrioMarket\SanrioMarket.Contracts\obj\Debug\net7.0\SanrioMarket.Contracts.csproj.AssemblyReference.cache
+C:\Work\Code\REST1\SanrioMarket\SanrioMarket.Contracts\obj\Debug\net7.0\SanrioMarket.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\Code\REST1\SanrioMarket\SanrioMarket.Contracts\obj\Debug\net7.0\SanrioMarket.Contracts.AssemblyInfoInputs.cache
+C:\Work\Code\REST1\SanrioMarket\SanrioMarket.Contracts\obj\Debug\net7.0\SanrioMarket.Contracts.AssemblyInfo.cs
+C:\Work\Code\REST1\SanrioMarket\SanrioMarket.Contracts\obj\Debug\net7.0\SanrioMarket.Contracts.csproj.CoreCompileInputs.cache
+C:\Work\Code\REST1\SanrioMarket\SanrioMarket.Contracts\obj\Debug\net7.0\SanrioMarket.Contracts.dll
+C:\Work\Code\REST1\SanrioMarket\SanrioMarket.Contracts\obj\Debug\net7.0\refint\SanrioMarket.Contracts.dll
+C:\Work\Code\REST1\SanrioMarket\SanrioMarket.Contracts\obj\Debug\net7.0\SanrioMarket.Contracts.pdb
+C:\Work\Code\REST1\SanrioMarket\SanrioMarket.Contracts\obj\Debug\net7.0\ref\SanrioMarket.Contracts.dll
