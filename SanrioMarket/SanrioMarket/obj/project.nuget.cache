@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fI2Ff11wFi09hZDLrYJinJMYiQU6se5lcAow64XUsGeTTjiFgwOJ2PYRDCQ+ZYgeNuho8I/hvS2H2rPGPNPElQ==",
+  "dgSpecHash": "anz5lIwJNw4j7qZLTKvpXSSdVcTAyr7ux6RqQ9DTmiHVfBsxcT3/wcsoR4aZkSfITPvuY1iq6XE3vE6CvwICKg==",
   "success": true,
-  "projectFilePath": "c:\\Work\\Code\\REST1\\SanrioMarket\\SanrioMarket\\SanrioMarket.csproj",
+  "projectFilePath": "C:\\Work\\Code\\REST1\\SanrioMarket\\SanrioMarket\\SanrioMarket.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chong\\.nuget\\packages\\erroror\\1.10.0\\erroror.1.10.0.nupkg.sha512",
     "C:\\Users\\chong\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.2\\microsoft.aspnetcore.openapi.7.0.2.nupkg.sha512",

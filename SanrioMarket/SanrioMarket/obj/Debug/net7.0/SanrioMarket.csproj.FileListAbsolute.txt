@@ -33,3 +33,4 @@ C:\Work\Code\REST1\SanrioMarket\SanrioMarket\obj\Debug\net7.0\refint\SanrioMarke
 C:\Work\Code\REST1\SanrioMarket\SanrioMarket\obj\Debug\net7.0\SanrioMarket.pdb
 C:\Work\Code\REST1\SanrioMarket\SanrioMarket\obj\Debug\net7.0\SanrioMarket.genruntimeconfig.cache
 C:\Work\Code\REST1\SanrioMarket\SanrioMarket\obj\Debug\net7.0\ref\SanrioMarket.dll
+C:\Work\Code\REST1\SanrioMarket\SanrioMarket\bin\Debug\net7.0\ErrorOr.dll

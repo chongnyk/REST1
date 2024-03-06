@@ -1,21 +1,36 @@
 namespace SanrioMarket.Services.Markets;
+
+using ErrorOr;
 using SanrioMarket.Models;
+using SanrioMarket.ServiceErrors;
 
 public class MarketService : IMarketService{
     private static readonly Dictionary<Guid, Market> _markets = new();
-    public void CreateMarket(Market market){
+    public ErrorOr<Created> CreateMarket(Market market){
         _markets.Add(market.Id, market);
+
+        return Result.Created;
     }
 
-    public Market GetMarket(Guid id){
-        return _markets[id];
+    public ErrorOr<Market> GetMarket(Guid id){
+        if(_markets.TryGetValue(id, out var market)){
+            return _markets[id];
+        }
+
+        return Errors.Market.NotFound;
     }
 
-    public void UpsertMarket(Market market){
+    public ErrorOr<UpsertedMarket> UpsertMarket(Market market){
+
+        var isNewlyCreated = !_markets.ContainsKey(market.Id);
         _markets[market.Id] = market;
+
+        return new UpsertedMarket(isNewlyCreated);
     }
 
-    public void DeleteMarket(Guid id){
+    public ErrorOr<Deleted> DeleteMarket(Guid id){
         _markets.Remove(id);
+
+        return Result.Deleted;
     }
 }

@@ -1,11 +1,12 @@
+using ErrorOr;
 using SanrioMarket.Contracts.Market;
 using SanrioMarket.Models;
 
 namespace SanrioMarket.Services.Markets;
 
 public interface IMarketService{
-    void CreateMarket(Market market);
-    void DeleteMarket(Guid id);
-    Market GetMarket(Guid id);
-    void UpsertMarket(Market market);
+    ErrorOr<Created> CreateMarket(Market market);
+    ErrorOr<Deleted> DeleteMarket(Guid id);
+    ErrorOr<Market> GetMarket(Guid id);
+    ErrorOr<UpsertedMarket> UpsertMarket(Market market);
 }
