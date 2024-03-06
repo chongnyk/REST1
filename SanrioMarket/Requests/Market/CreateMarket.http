@@ -2,8 +2,8 @@ POST http://localhost:5170/market
 Content-Type: application/json
 
 {
-    "name": "Badtz-Maru",
-    "description": "male penguin with spiky hair",
+    "name": "B", //Badtz-Maru
+    "description": "male peng", //male penguin with spiky hair
     "startDateTime": "2024-02-06T02:25:00",
     "endDateTime": "2024-02-06T03:00:00",
     "traits": [

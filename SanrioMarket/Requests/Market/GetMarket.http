@@ -1,3 +1,2 @@
-@id= 48a5c259-431b-4baa-8d3d-01eb81ee777f
-
+@id= cafe7541-ea8e-4dac-9fc8-a9fb1fcb3c17
 GET http://localhost:5170/market/{{id}}

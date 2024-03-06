@@ -18,16 +18,14 @@ public class MarketController : ApiController
     [HttpPost("")]
     public IActionResult CreateMarket(CreateMarketRequest request)
     {
-        var market = new Market(
-            Guid.NewGuid(),
-            request.Name,
-            request.Description,
-            request.StartDateTime,
-            request.EndDateTime,
-            DateTime.UtcNow,
-            request.Traits
-        );
+        ErrorOr<Market> requestToMarketResult = Market.From(request);
 
+        if(requestToMarketResult.IsError)
+        {
+            return Problem(requestToMarketResult.Errors);
+        }
+
+        var market = requestToMarketResult.Value;
         ErrorOr<Created> createMarketResult = _marketService.CreateMarket(market);
 
         return createMarketResult.Match(
@@ -49,16 +47,13 @@ public class MarketController : ApiController
 
     [HttpPut("{id:guid}")]
     public IActionResult UpsertMarket(Guid id, UpsertMarketRequest request){
-        var market = new Market(
-            id,
-            request.Name,
-            request.Description,
-            request.StartDateTime,
-            request.EndDateTime,
-            DateTime.UtcNow,
-            request.Traits
-        );
+        ErrorOr<Market> requestToMarketResult = Market.From(id, request);
         
+        if(requestToMarketResult.IsError){
+            return Problem(requestToMarketResult.Errors);
+        }
+
+        var market = requestToMarketResult.Value;
         ErrorOr<UpsertedMarket> upserteMarketResult = _marketService.UpsertMarket(market);
         //TODO: return 201 if new market is created
         return upserteMarketResult.Match(
